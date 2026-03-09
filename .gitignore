@@ -1,0 +1,50 @@
+# Models and outputs (large files — don't commit)
+models/*.keras
+models/*.pkl
+models/*.h5
+outputs/*.png
+outputs/*.npy
+outputs/*.csv
+outputs/*.json
+
+# Keep directory structure
+!models/.gitkeep
+!outputs/.gitkeep
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+*.conda
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (large CSV)
+data/*.csv
+continuous dataset.csv
+continuous_dataset.csv
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Internal notes (private — do not publish)
+internal/
