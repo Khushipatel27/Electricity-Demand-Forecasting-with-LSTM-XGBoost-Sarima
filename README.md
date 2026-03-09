@@ -28,7 +28,7 @@ This project builds a complete end-to-end forecasting pipeline with three models
 | Model | MAE (MW) | RMSE (MW) | MAPE (%) | R² | Horizon |
 |-------|----------|-----------|----------|----|---------|
 | **LSTM** | 81.67 | 112.48 | **7.15%** | 0.59 | 24-hour multi-step |
-| **XGBoost** | — | — | — | — | 1-step ahead |
+| **XGBoost** | 58.74 | 81.19  | 5.13 | 0.78 | 1-step ahead |
 | **SARIMA** | 127.13 | 152.26 | 11.47% | -0.65 | Daily baseline |
 
 > **LSTM achieves 7.15% MAPE** — predicting demand within ~82 MW on an average load of ~1,150 MW.
