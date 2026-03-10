@@ -1,11 +1,5 @@
-# Models and outputs (large files — don't commit)
-models/*.keras
-models/*.pkl
-models/*.h5
-outputs/*.png
-outputs/*.npy
-outputs/*.csv
-outputs/*.json
+# Large model files — too big for GitHub
+models/sarima_model.pkl
 
 # Keep directory structure
 !models/.gitkeep

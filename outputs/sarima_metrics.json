@@ -1,0 +1,10 @@
+{
+  "model": "SARIMA",
+  "MAE_MW": 127.129,
+  "RMSE_MW": 152.259,
+  "MAPE_pct": 11.469,
+  "R2": -0.652,
+  "max_error_MW": 283.284,
+  "within_5pct": 33.52,
+  "within_10pct": 42.46
+}

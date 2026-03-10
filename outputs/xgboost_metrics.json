@@ -1,0 +1,11 @@
+{
+  "model": "XGBoost",
+  "MAE_MW": 58.742,
+  "RMSE_MW": 81.198,
+  "MAPE_pct": 5.134,
+  "R2": 0.7874,
+  "max_error_MW": 329.463,
+  "within_5pct": 62.62,
+  "within_10pct": 85.88,
+  "note": "1-step-ahead (t+1) forecast"
+}

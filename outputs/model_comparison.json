@@ -1,0 +1,65 @@
+{
+  "LSTM": {
+    "model": "LSTM",
+    "MAE_MW": 81.675,
+    "RMSE_MW": 112.476,
+    "MAPE_pct": 7.146,
+    "R2": 0.5916,
+    "max_error_MW": 475.212,
+    "within_5pct": 50.23,
+    "within_10pct": 75.5,
+    "per_horizon": {
+      "Hour +1": {
+        "MAPE_pct": 7.192,
+        "R2": 0.6082,
+        "MAE_MW": 81.58
+      },
+      "Hour +3": {
+        "MAPE_pct": 7.143,
+        "R2": 0.6027,
+        "MAE_MW": 81.02
+      },
+      "Hour +6": {
+        "MAPE_pct": 7.117,
+        "R2": 0.6082,
+        "MAE_MW": 80.97
+      },
+      "Hour +12": {
+        "MAPE_pct": 6.956,
+        "R2": 0.6152,
+        "MAE_MW": 79.55
+      },
+      "Hour +18": {
+        "MAPE_pct": 7.159,
+        "R2": 0.5765,
+        "MAE_MW": 82.26
+      },
+      "Hour +24": {
+        "MAPE_pct": 7.599,
+        "R2": 0.5384,
+        "MAE_MW": 87.52
+      }
+    }
+  },
+  "SARIMA": {
+    "model": "SARIMA",
+    "MAE_MW": 127.129,
+    "RMSE_MW": 152.259,
+    "MAPE_pct": 11.469,
+    "R2": -0.652,
+    "max_error_MW": 283.284,
+    "within_5pct": 33.52,
+    "within_10pct": 42.46
+  },
+  "XGBoost": {
+    "model": "XGBoost",
+    "MAE_MW": 58.742,
+    "RMSE_MW": 81.198,
+    "MAPE_pct": 5.134,
+    "R2": 0.7874,
+    "max_error_MW": 329.463,
+    "within_5pct": 62.62,
+    "within_10pct": 85.88,
+    "note": "1-step-ahead (t+1) forecast"
+  }
+}

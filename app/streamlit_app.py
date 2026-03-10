@@ -122,10 +122,13 @@ def load_lstm_model():
              MODELS_DIR / "target_scaler.pkl"]
     if not all(p.exists() for p in paths):
         return None, None, None
-    import tensorflow as tf
-    return (tf.keras.models.load_model(str(paths[0])),
-            joblib.load(paths[1]),
-            joblib.load(paths[2]))
+    try:
+        import tensorflow as tf
+        return (tf.keras.models.load_model(str(paths[0])),
+                joblib.load(paths[1]),
+                joblib.load(paths[2]))
+    except ImportError:
+        return None, None, None
 
 
 @st.cache_resource(show_spinner="Loading XGBoost model...")
